@@ -1,0 +1,57 @@
+// $Text:#c59bfd;
+$Text:#fbb27a;
+$caution:#b2b2b2;
+$danger:#f56c6c;
+
+.search_box {
+  margin-top: 10px;
+}
+
+.circle {
+  margin: auto 8px auto 0;
+  width: 14px;
+  color: $Text;
+  height: 14px;
+}
+
+.page_box {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.del {
+  color: $danger;
+}
+
+@mixin radius($num:5px) {
+  border-radius: $num;
+}
+
+@mixin clearBtn {
+  // background: $Text;
+  // color: #fff;
+  // border: none;
+}
+
+@mixin border($site:1, $type:solid, $b:#000) {
+  @if $site==1 {
+    border: 1px $type $b;
+  }
+
+  @else if $site==1 {
+    border-top: 1px $type $b;
+  }
+
+  @else if $site==2 {
+    border-right: 1px $type $b;
+  }
+
+  @else if $site==3 {
+    border-bottom: 1px $type $b;
+  }
+
+  @else if $site==4 {
+    border-left: 1px $type $b;
+  }
+}

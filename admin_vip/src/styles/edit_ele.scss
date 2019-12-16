@@ -1,0 +1,40 @@
+@import './variables.scss';
+
+.el-pager li,
+.el-pagination .btn-next,
+.el-pagination button:disabled,
+.el-pagination .btn-prev {
+  background: $bodyBg;
+  color: $bodyText;
+}
+
+.table_body,
+.table_body th,
+.table_body tr {
+  background: $bodyBg;
+  color: $bodyText;
+}
+
+.table_body tr.hover-row>td {
+  background: $menuHover;
+}
+
+.table_body tbody tr:hover>td {
+  background-color: $menuHover !important
+}
+
+.tabs_body .el-tabs__item {
+  color: $bodyText;
+}
+
+.tabs_body .el-tabs__item.is-active {
+  color: $menuActiveText;
+}
+
+.el-form-item__label {
+  color: $bodyText;
+}
+
+.table_body .el-table__expand-icon>.el-icon {
+  color: #fff;
+}

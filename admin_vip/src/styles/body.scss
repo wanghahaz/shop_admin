@@ -1,0 +1,111 @@
+$danger:#f56c6c;
+
+.danger {
+  color: $danger;
+}
+
+.fs_10 {
+  font-size: 10;
+}
+
+.fs_11 {
+  font-size: 11;
+}
+
+.fs_12 {
+
+  font-size: 12;
+}
+
+.fs_14 {
+  font-size: 14;
+}
+
+.container {
+  padding: 20px;
+}
+
+.box_zing {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex_dir {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex_c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_bet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex_end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+// 搜索
+.search_box {
+  @extend .flex;
+  flex-wrap: wrap;
+
+  >div {
+    @extend .flex;
+    margin: 0 20px 15px 0;
+
+    >label {
+      flex-shrink: 0;
+      padding-right: 10px;
+      line-height: 32px;
+      display: inline-block;
+    }
+  }
+}
+
+.search_btn {
+  margin: 10px 0;
+  @extend .flex_end;
+}
+
+// 分页
+.page_box {
+  margin: 30px 0;
+  @extend .flex_c;
+}
+
+// ----------
+@mixin border($site:1, $type:solid, $b:#000) {
+  @if $site==1 {
+    border: 1px $type $b;
+  }
+
+  @else if $site==1 {
+    border-top: 1px $type $b;
+  }
+
+  @else if $site==2 {
+    border-right: 1px $type $b;
+  }
+
+  @else if $site==3 {
+    border-bottom: 1px $type $b;
+  }
+
+  @else if $site==4 {
+    border-left: 1px $type $b;
+  }
+}
